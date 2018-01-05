@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+
+  "name": "Google Redirect Fix Extension",
+  "description": "This extension will automatically redirect pages that give the redirect warning",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["https://www.google.com/*"],
+      "js": ["redirect.js"]
+    }
+  ]
+}
